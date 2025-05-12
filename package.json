@@ -1,0 +1,26 @@
+{
+	"name": "stake-worker",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev --remote",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@cloudflare/workers-types": "^4.20250509.0",
+		"@types/pg": "^8.15.1",
+		"typescript": "^5.5.2",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.14.4"
+	},
+	"dependencies": {
+		"@upstash/redis": "^1.34.9",
+		"hono": "^4.7.9",
+		"jose": "^6.0.11",
+		"postgres": "^3.4.5"
+	}
+}
