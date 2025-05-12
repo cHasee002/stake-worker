@@ -17,8 +17,6 @@ const verifyJwt = async (c: Context<{ Bindings: Bindings; Variables: Variables }
 			issuer: '@stake-worker',
 		});
 
-		console.log(payload);
-
 		if (!payload.userId) {
 			throw new Error('Invalid payload');
 		}
