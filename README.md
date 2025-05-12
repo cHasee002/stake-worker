@@ -79,3 +79,5 @@ Every request to the other two endpoints must contain the token in the _Authriza
 I used the _postgres_ library to access the CockroachDB database. Given the simplicity of this assignment I wrote raw SQL queries which are easy to read.
 
 As for the Redis part I did not really understand what do you exactly want me to implement so I just literally did what was described in the README. For the user id key I incremented its value for every stake insert.
+
+Worker URL: https://stake-worker.bzalan65.workers.dev/
